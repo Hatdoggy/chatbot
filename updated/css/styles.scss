@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@400;700&display=swap");
+@import "_var";
+@import "_def";
+@import "_struct";
+@import "_query";
+
+.lato {
+  font-family: $lato;
+}
+.mont {
+  font-family: $mont;
+  &-b {
+    font-weight: 700;
+  }
+  &-r {
+    font-weight: 400;
+  }
+}
+
+.chatCont {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 0 !important;
+}
+
+h1 {
+  font-size: clamp(2.5rem, 7vw, 7rem);
+}
+h2 {
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+h4 {
+  font-size: clamp(1.3rem, 1.5vw, 1.8rem);
+}
+p,
+button {
+  font-size: clamp(1rem, 1.1vw, 1.3rem);
+}
+small {
+  font-size: clamp(0.6rem, 0.75rem, 1rem);
+  line-height: 1.5;
+}
